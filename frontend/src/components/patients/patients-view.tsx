@@ -89,7 +89,11 @@ export function PatientsView() {
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="text-2xl font-semibold">Patients</h1>
-          <p className="text-muted-foreground text-sm">
+          <p
+            className={
+              isAdmin ? 'text-success text-sm' : 'text-warning text-sm'
+            }
+          >
             {isAdmin
               ? 'You can add, edit and remove records.'
               : 'You have view-only access.'}

@@ -33,7 +33,7 @@ export function AppHeader() {
               <span className="text-muted-foreground hidden text-sm sm:inline">
                 {session.email}
               </span>
-              <Badge variant={session.role === 'admin' ? 'default' : 'outline'}>
+              <Badge variant={session.role === 'admin' ? 'success' : 'warning'}>
                 {session.role}
               </Badge>
             </>
